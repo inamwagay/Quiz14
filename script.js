@@ -15,27 +15,169 @@ let count = 11;
 let countdown;
 
 //Questions and Options array
-
 const quizArray = [
   {
     id: "0",
-    question: "Which is the most widely spoken language in the world?",
-    options: ["Spanish", "Mandarin", "English", "German"],
-    correct: "English",
+    question: "When did World War 1 begin?",
+    options: ["1914", "1912", "1918", "1920"],
+    correct: "1914",
   },
   {
     id: "1",
-    question: "Which is the only continent in the world without a desert?",
-    options: ["North America", "Asia", "Africa", "Europe"],
-    correct: "Europe",
+    question: "Which event is considered the immediate cause of World War 1?",
+    options: [
+      "Invasion of Poland",
+      "Assassination of Archduke Franz Ferdinand",
+      "Sinking of the Lusitania",
+      "Zimmermann Telegram"
+    ],
+    correct: "Assassination of Archduke Franz Ferdinand",
   },
   {
     id: "2",
-    question: "Who invented Computer?",
-    options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
-    correct: "Charles Babbage",
+    question: "Which country was NOT part of the Allied Powers during WW1?",
+    options: ["France", "Germany", "Russia", "United Kingdom"],
+    correct: "Germany",
+  },
+  {
+    id: "3",
+    question: "Who was the leader of Germany during World War 1?",
+    options: ["Adolf Hitler", "Kaiser Wilhelm II", "Otto von Bismarck", "Joseph Goebbels"],
+    correct: "Kaiser Wilhelm II",
+  },
+  {
+    id: "4",
+    question: "What type of warfare was most common on the Western Front?",
+    options: ["Naval Warfare", "Trench Warfare", "Air Warfare", "Guerrilla Warfare"],
+    correct: "Trench Warfare",
+  },
+  {
+    id: "5",
+    question: "What was the name of the treaty that ended World War 1?",
+    options: [
+      "Treaty of Versailles",
+      "Treaty of Tordesillas",
+      "Treaty of Ghent",
+      "Treaty of Paris"
+    ],
+    correct: "Treaty of Versailles",
+  },
+  {
+    id: "6",
+    question: "Which empire did Austria-Hungary belong to?",
+    options: ["Roman Empire", "Holy Roman Empire", "Dual Monarchy", "Ottoman Empire"],
+    correct: "Dual Monarchy",
+  },
+  {
+    id: "7",
+    question: "Which country joined WW1 in 1917 and helped tip the balance in favor of the Allies?",
+    options: ["Russia", "Italy", "USA", "Japan"],
+    correct: "USA",
+  },
+  {
+    id: "8",
+    question: "What was the main objective of the Gallipoli campaign?",
+    options: [
+      "To capture Berlin",
+      "To open a sea route to Russia",
+      "To invade France",
+      "To occupy Egypt"
+    ],
+    correct: "To open a sea route to Russia",
+  },
+  {
+    id: "9",
+    question: "Which weapon was introduced during WW1 and caused severe injuries?",
+    options: ["Tanks", "Mustard Gas", "Rifles", "Airplanes"],
+    correct: "Mustard Gas",
+  },
+  {
+    id: "10",
+    question: "Who was the Prime Minister of the UK during most of WW1?",
+    options: ["Winston Churchill", "David Lloyd George", "Neville Chamberlain", "Herbert Asquith"],
+    correct: "David Lloyd George",
+  },
+  {
+    id: "11",
+    question: "What was the Zimmermann Telegram?",
+    options: [
+      "A German peace offer",
+      "A British war declaration",
+      "A German proposal to Mexico to join the war against the US",
+      "A Russian surrender notice"
+    ],
+    correct: "A German proposal to Mexico to join the war against the US",
+  },
+  {
+    id: "12",
+    question: "Which battle is considered one of the longest of WW1?",
+    options: ["Battle of Verdun", "Battle of the Somme", "Battle of Tannenberg", "Battle of Ypres"],
+    correct: "Battle of Verdun",
+  },
+  {
+    id: "13",
+    question: "What was 'No Man's Land'?",
+    options: [
+      "Land owned by neutral countries",
+      "Disputed land in Africa",
+      "The land between opposing trenches",
+      "A buffer zone in colonies"
+    ],
+    correct: "The land between opposing trenches",
+  },
+  {
+    id: "14",
+    question: "Which empire collapsed as a result of WW1?",
+    options: [
+      "British Empire",
+      "German Empire",
+      "Ottoman Empire",
+      "Both B and C"
+    ],
+    correct: "Both B and C",
+  },
+  {
+    id: "15",
+    question: "What was the main role of women during WW1?",
+    options: [
+      "Combat soldiers",
+      "Nurses and factory workers",
+      "Spies",
+      "Teachers"
+    ],
+    correct: "Nurses and factory workers",
+  },
+  {
+    id: "16",
+    question: "How did the United States justify entering WW1?",
+    options: [
+      "To avenge Pearl Harbor",
+      "Due to unrestricted submarine warfare and the Zimmermann Telegram",
+      "To support colonial independence",
+      "To stop communism"
+    ],
+    correct: "Due to unrestricted submarine warfare and the Zimmermann Telegram",
+  },
+  {
+    id: "17",
+    question: "What was the name of the German plan to quickly defeat France?",
+    options: ["Schlieffen Plan", "Blitzkrieg", "Barbarossa Plan", "Molotov Plan"],
+    correct: "Schlieffen Plan",
+  },
+  {
+    id: "18",
+    question: "Which new vehicle played a significant role in breaking the trench stalemate?",
+    options: ["Airplanes", "Ships", "Submarines", "Tanks"],
+    correct: "Tanks",
+  },
+  {
+    id: "19",
+    question: "How many soldiers were estimated to have died in WW1?",
+    options: ["1 million", "5 million", "10 million", "Over 16 million"],
+    correct: "Over 16 million",
   },
 ];
+
 
 //Restart Quiz
 restart.addEventListener("click", () => {
